@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  1>Scope using let variable</h1>
+<p id="res"></p>
+
+<script>
+    var x;                      
+    var result = " ";
+
+    {
+        let x = 0;              
+        while (x <= 10) {
+            result = result + "<br>Number: " + x;
+            x++;
+        }
+        document.getElementById("res").innerHTML = result;
+    }
+
+    document.write("x value outside block: " + x);
+</script>
+</body>
+</html>
